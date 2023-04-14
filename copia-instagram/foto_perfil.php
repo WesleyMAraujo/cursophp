@@ -7,8 +7,8 @@ $caminho_imagem = "imagens/user/" . 'user.jpg'; // Caminho de destino para a ima
 
 
 if (move_uploaded_file($imagem_temporaria, $caminho_imagem)) { // Move o arquivo temporário para o caminho de destino
-    
+    header("Location: perfil.html");
+    exit();
 } else {
     echo "Erro ao salvar a imagem"; // Exibe mensagem de erro
 }
-
