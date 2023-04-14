@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de envio de imagem</title>
+    <style>
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+	<h1>Enviar imagem</h1>
+	<form action="salvar_imagem.php" method="post" enctype="multipart/form-data">
+		<label for="imagem">Selecione uma imagem:</label>
+		<input type="file" name="imagem" id="imagem">
+		<br><br>
+		<input type="submit" value="Enviar">
+	</form>
+    <br>
+    <br>
+    <br>
+    <h1>foto enviada pelo form</h1>
+    <img src="imagens/user.jpg" alt="">
+</body>
+</html>
