@@ -109,18 +109,21 @@
                 ➕
             </button>
             <div class="dropdown-menu">
-
+                <form action="foto_pub.php" method="post" enctype="multipart/form-data">
+                    <label for="selecione uma imagem" ></label>
+                    <input type="file" name="fotoPub" id="fotoPub">
+                    <input type="submit" value="enviar foto">
+                </form>
             </div>
         </div>
 
-        <!-- <div id="imagesContainer"></div> -->
-        <img id="outputImgPub" src="imagens/usuarios/user-photo/user.jpg" style="border: 1px solid white;">
+        <img id="outputImgPub" src="imagens/user-pubs/img1.jpg">
     </div>
 
     <footer id="rodape">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div id="menu" style="margin: auto;">
-                <a href="#">🏠</a>
+                <a href="index.html">🏠</a>
                 <a href="#">🌐</a>
                 <a href="#">📺</a>
                 <a href="#">✉️</a>
@@ -142,7 +145,7 @@
         if (window.location.search.includes("voltando=true")) {
             setTimeout(function () {
                 location.reload();
-            }, 1000); // Recarrega a página após 1 segundo (1000ms)
+            }, 2000); // Recarrega a página após 1 segundo (1000ms)
         }
     </script>
 </body>

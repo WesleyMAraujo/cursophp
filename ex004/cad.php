@@ -14,9 +14,11 @@
     <main>
         <?php 
             /* var_dump($_GET)// $_REQUEST é a junção de $_GET e $_POST */
-            $nome = $_GET["nome"];
-            echo $nome;
+            $nome = $_GET["nome"] ?? "ESTRANHO";
+            $sobrenome =$_GET["sobrenome"] ?? "DESCONHECIDO";
+            echo "<p>é um prazer te conhecer, <strong>$nome $sobrenome</strong>! Este é o meu site!</p>"
         ?>
+        <p><a href="javascript:history.go(-1)">voltar a página anterior</a></p>
     </main>
 </body>
 </html>
